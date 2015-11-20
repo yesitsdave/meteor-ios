@@ -57,6 +57,10 @@
   return self;
 }
 
+- (instancetype)initWithServerURL:(NSURL *)serverURL managedObjectModel:(NSManagedObjectModel *)managedObjectModel {
+    return [self initWithConnection:[[METDDPConnection alloc] initWithServerURL:serverURL] managedObjectModel:managedObjectModel];
+}
+
 - (void)dealloc {
   [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
