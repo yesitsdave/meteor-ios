@@ -38,6 +38,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)signUpWithEmail:(NSString *)email password:(NSString *)password profile:(nullable NSDictionary *)profile completionHandler:(nullable METLogInCompletionHandler)completionHandler;
 
+/// @name Logging In with OAuth credentialToken and credentialSecret
+
+- (void)loginWithCredentialToken:(NSString *)credentialToken credentialSecret:(NSString *)credentialSecret completionHandler:(nullable METLogInCompletionHandler)completionHandler;
+
 @end
 
 NS_ASSUME_NONNULL_END

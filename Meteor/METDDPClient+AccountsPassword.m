@@ -46,6 +46,10 @@
   [self loginWithMethodName:@"createUser" parameters:parameters completionHandler:completionHandler];
 }
 
+-(void)loginWithCredentialToken:(NSString *)credentialToken credentialSecret:(NSString *)credentialSecret completionHandler:(nullable METLogInCompletionHandler)completionHandler{
+    [self loginWithMethodName:@"login" parameters:@[@{@"oauth": @{@"credentialToken": credentialToken, @"credentialSecret" : credentialSecret}}] completionHandler:completionHandler];
+}
+
 #pragma mark - Helper Methods
 
 - (NSDictionary *)parametersForCreateUserMethodFromEmail:(NSString *)email password:(NSString *)password profile:(NSDictionary *)profile {
