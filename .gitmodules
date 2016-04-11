@@ -1,6 +1,6 @@
 [submodule "Vendor/PocketSocket"]
 	path = Vendor/PocketSocket
-	url = git://github.com/zwopple/PocketSocket.git
+	url = git://github.com/yesitsdave/PocketSocket.git
 [submodule "Vendor/InflectorKit"]
 	path = Vendor/InflectorKit
 	url = git://github.com/mattt/InflectorKit.git
